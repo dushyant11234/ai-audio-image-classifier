@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio & Image Classifier</title>
+</head>
+<body>
+    <h1>Upload Audio for Prediction</h1>
+    <form action="/predict_audio" method="POST" enctype="multipart/form-data">
+        <input type="file" name="audio_file" required>
+        <input type="submit" value="Predict Audio">
+    </form>
+    <p>{{ audio_result }}</p>
+
+    <h1>Upload Image for Prediction</h1>
+    <form action="/predict_image" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image_file" required>
+        <input type="submit" value="Predict Image">
+    </form>
+    <p>{{ image_result }}</p>
+</body>
+</html>
