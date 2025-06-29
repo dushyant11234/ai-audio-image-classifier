@@ -1,6 +1,6 @@
 Flask
 keras
-tensorflow
+tensorflow-cpu
 librosa
 numpy
 Pillow
